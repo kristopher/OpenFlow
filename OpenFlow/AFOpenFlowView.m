@@ -335,10 +335,6 @@ const static CGFloat kReflectionFraction = 0.85;
 {
 //    NSLog(@"contentOffset = %@ animated:%@", NSStringFromCGPoint(contentOffset), (animated) ? @"YES" : @"NO");
     [super setContentOffset:contentOffset animated:animated];
-    if(!animated)
-    {
-        [self centerOnSelectedCover:NO];
-    }
 }
 
 - (void)setNumberOfImages:(int)newNumberOfImages {
